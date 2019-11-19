@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -67,15 +67,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Sarah}{Morin}
 {  \urlstyle{same} 950 24$^{th}$ Street NW, Apt. 905, Washington, DC 20037 \\
- \href{mailto:sarahmorin@gwu.edu}{sarahmorin@gwu.edu} | 603.998.6402 }
+\href{mailto:sarahmorin@gwu.edu}{sarahmorin@gwu.edu} | 603.998.6402 }
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %
- %     COLUMN ONE
- %
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.33\textwidth}
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %     SKILLS
@@ -83,14 +83,20 @@
         \section{Skills}
         \subsection{Programming}
         Java \textbullet{}  Python \textbullet{} C \\
-        SQL \textbullet{} Assembly \textbullet{} \LaTeX\ \\ 
+        SQL \textbullet{} Assembly \textbullet{} \LaTeX\ \\
         HTML \textbullet{} PHP \textbullet{} MATLAB \\
         \sectionsep
         \subsection{Operating Systems}
         Linux \textbullet{} Windows \\
         \sectionsep
+        % TODO: add tools/software proficiencies
+        %        \subsection{Tools}
+        %        Micorsoft Office
+        %        \sectionsep
+        %
         \subsection{Languages}
-        English (Native) \textbullet{} Spanish (Advanced)\\
+        English (Native) \\
+        Spanish (Advanced)\\
         \sectionsep
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,8 +116,19 @@
         Discrete Structures I \& II \\
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     AWARDS
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \section{Awards}
+        \subsection{2019}
+        {\bf Steve and Shelly Heller Prize} \\
+        {\bf Clare Booth Luce Scholar} \\
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %     LINKS
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % TODO: use logos instead??
+
         \section{Links}
         Github:// \href{https://github.com/smorin8674}{\bf smorin8674}\\
         LinkedIn://  \href{https://www.linkedin.com/in/sarah-morin-500603165/}{\bf Sarah Morin} \\
@@ -122,27 +139,37 @@
         %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.66\textwidth}
 
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %     EDUCATION
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-        \section{Education} 
+        \section{Education}
         \subsection{The George Washington University}
         \descript{BS in Computer Science, Minor in Mathematics}
-        \location{Expected May 2021 | Washington, DC}
         School of Engineering and Applied Science\\
+        \location{Expected May 2021 | Washington, DC}
         \location{GPA: 3.84 / 4.0}
+        \vspace{\topsep}
+        \begin{tightemize}
+        \item Conecntration: Cybersecurity, Crytopgraphy
+        \end{tightemize}
         \sectionsep
 
         \subsection{Digistal Forensics and Cyber Security Program}
         \descript{Pre-College Program | Champlain College}
         \location{July 2016 | Leahy center for Digital Investigation}
-    
+        \vspace{\topsep}
+        \begin{tightemize}
+        \item Learned basic cyber security and digital forensics skills such as computer and network security, vulnerability exploitation, mobile device forensics, and security protocols for sensitive data.
+        \item Used state of the art technologies including TCPDump, Wireshark, and NMAP.
+        \end{tightemize}
+
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %     RESEARCH
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -150,10 +177,15 @@
         \section{Research}
         \runsubsection{AURROR}
         \descript{| Undergraduate Researcher}
-        \location{Professor Poorvi Vora | Department of Computer Science}
-        \location{March 2019 - Present | The George Washington University}
+        \descript{Professor Poorvi Vora | Dept. of Computer Science}
+        \location{September 2019 - Present | The George Washington University}
         %% TODO descritpion
         \sectionsep
+        \runsubsection{Bayesian Risk Limiting Audits}
+        \descript{| Undergraduate Researcher}
+        \descript{Professor Poorvi Vora | Dept. of Computer Science}
+        \location{March 2019 - September 2019 | The George Washington University}
+        Simulated Bayesian risk-limiting ballot polling audits on elections with invalid votes and multiple candidate elections.
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %     EXPERIENCE
@@ -165,10 +197,14 @@
         \descript{| Teaching Assistant}
         \location{Jan. 2019 - Present | Washington, DC}
         \vspace{\topsep} % fix for spacing prob
-        \begin{tightemize} 
-                \item CSCI 2461: Computer Architecture | Fall, 2019
-                \item CSCI 1311: Discrete Structures I | Spring, 2019
-        \end{tightemize}
+        % \begin{tightemize}
+        % \item
+        % \end{tightemize}
+        \begin{tabular}{rlr}
+                % TODO add systems
+                CSCI 2461 & Computer Architecture & Fall, 2019 \\
+                CSCI 1311 & Discrete Structures I & Spring 2019 \\
+        \end{tabular}
         \sectionsep
 
         \runsubsection{GC Engineering}
@@ -176,58 +212,33 @@
         \location{June 2017 - Present | Laconia, NH}
         \sectionsep
 
-
-        %\runsubsection{Facebook}
-        %\descript{| Software Engineer }
-        %\location{Jan 2015 - Present | New York, NY}
-        %\sectionsep
-        %
-        %\runsubsection{Coursera}
-        %\descript{| KPCB Fellow + Software Engineering Intern }
-        %\location{June 2014 – Sep 2014 | Mountain View, CA}
-        %\vspace{\topsep} % Hacky fix for awkward extra vertical space
-        %\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-        %\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-        %\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
-        %\end{tightemize}
-        %\sectionsep
-        %
-        %\runsubsection{Google}
-        %\descript{| Software Engineering Intern }
-        %\location{May 2013 – Aug 2013 | Mountain View, CA}
-        %\begin{tightemize}
-        %\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
-        %\sectionsep
-        %
-        %\runsubsection{Phabricator}
-        %\descript{| Open Source Contributor \& Team Leader}
-        %\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
-        %\begin{tightemize}
-        %\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
-        % \sectionsep
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Projects
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Projects}
+        \descript{Multivariate Hypergeometric Distribution Sampling Tool}
+        \location{Python}
+        \descript{Course Registraion System}
+        \location{MySQL, HTML, PHP, CSS}
+        \descript{Encryption/Decryption with Caesar Cipher/OTP}
+        \location{LC3 Assembly}
+        \descript{Search Engine | Text Files}
+        \location{C}
+        \descript{Chat Room}
+        \location{Java}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     PUBLICATIONS
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% TODO
+        %% NOTE: will also need to fix publiction.bib file
 
-\section{Awards} 
-\begin{tabular}{rll}
-        2019 & GWU & {\bf Steve and Sheller Heller Prze} \\ 
-        2019 & GWU & {\bf Clare Boothe Luce Scholar} \\
-\end{tabular}
+        % \section{Publications}
+        %\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+        %\bibliographystyle{abbrv}
+        %\bibliography{publications}
+        %\nocite{*}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% TODO
-%% NOTE: will also need to fix publiction.bib file
-
-% \section{Publications} 
-%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-%\bibliographystyle{abbrv}
-%\bibliography{publications}
-%\nocite{*}
-
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
